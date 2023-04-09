@@ -1,0 +1,35 @@
+<%= form_with url: '/users', method: :post, local: true do |f| %>
+<div class="title_name" id="formline1">
+  <div class="row"> 
+    <div class="col">
+        <%= f.label :first_name %>
+        <p><%= f.text_field :first_name, class: "form-control", placeholder: "First Name" %></p>
+    </div>
+    <div class="col">
+        <%= f.label :last_name %>
+        <p><%= f.text_field :last_name, class: "form-control", placeholder: "Last Name" %></p>
+    </div>
+  </div>
+</div>
+<div class="title_name" id="formline2">
+  <div class="row">
+    <div class="col">
+        <%= f.label :email %>
+        <p><%= f.text_field :email, class: "form-control", placeholder: "example@email.com" %></p>
+    </div>
+  </div> 
+</div>
+<div class="title_name" id="formline3">
+  <div class="row">
+    <div class="col">
+        <%= f.label :password %>
+        <p><%= f.password_field :password, class: "form-control" %></p>
+    </div>
+    <div class="col">
+        <%= f.label :password_confirmation %>
+        <p><%= f.password_field :password_confirmation, class: "form-control" %></p>
+    </div>
+  </div>
+</div>
+<center><%= f.submit "Submit", class: "button" %></center>
+<% end %>

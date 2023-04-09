@@ -1,0 +1,21 @@
+@import "bootstrap";
+
+.navbar a {
+  color: white;
+  font-family: "arial rounded mt bold", sans-serif;
+}
+
+.navbar a:hover {
+  color:red;
+  transition: 0.7s;
+}
+
+.bg {
+  background-color:red;
+  border-radius: 50px;
+}
+
+.title_name {
+  color:red;
+  font-family: "arial rounded mt bold", sans-serif;
+}
