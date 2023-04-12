@@ -11,7 +11,10 @@
 
   <body>
     <%= render "layouts/navbar" %>
+    <br>
     <%= render "layouts/logo" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
