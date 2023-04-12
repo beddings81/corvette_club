@@ -1,12 +1,3 @@
-<center>
-<div id="button">
-    <%= button_to "Log in with Google", "/", method: :get, local: true, class:"button btn-outline-info btn-sm" %><br>
-    <%= button_to "Log in with Facebook", "/", method: :get, local: true, class:"button btn-outline-info btn-sm" %>
-</div>
-
-<hr/>
-<h1>Sign Up</h1>
-</center>
 <%= form_with url: '/users', method: :post, local: true do |f| %>
 <div class="title_name" id="formline1">
   <div class="row"> 
@@ -40,9 +31,5 @@
     </div>
   </div>
 </div>
-<center>
-<%= f.check_box :terms_of_service %><%= f.label :terms_of_service, "I agree to the #{link_to 'Terms of Service', "/terms"}.".html_safe, {class: "checkbox inline"} %>
-<br/>
-<%= f.submit "Submit", class: "button" %>
+<center><%= f.submit "Submit", class: "button" %></center>
 <% end %>
-</center>
