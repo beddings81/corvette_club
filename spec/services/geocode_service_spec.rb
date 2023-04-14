@@ -6,7 +6,7 @@ RSpec.describe GeocodeService do
       city = GeocodeService.get_latlong("1405", "riverwatch court", "murfreesboro", "TN")
 
       expect(city).to have_key(:results)
-      expect(city[:results].to be_a(Array))
+      expect(city[:results]).to be_a(Array)
     end
   end
 end
