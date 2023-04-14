@@ -1,3 +1,17 @@
 <center>
-<h1>Welcome to the Middle Tennessee Corvette Club</h1>
+<h1 class="welcome-header">Welcome to the Middle Tennessee Corvette Club</h1>
+
+<div class="card-deck">
+<% @events.each do |event| %>
+  <div class="card text-white bg-dark mb-3" style="width: 70rem;">
+    <img class="card-img-top" src="<%= event.image_url %>" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to event.title, event_path(event), method: :get %></h5>
+      <p class="card-text">Date: <%= event.formatted_date %></p>
+      <p class="card-text">Location: <%= event.address %></p>
+    </div>
+  </div>
+  <% end %>
+  <br>
+</div>
 </center>
