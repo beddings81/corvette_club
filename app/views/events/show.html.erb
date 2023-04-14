@@ -1,0 +1,11 @@
+<center>
+<h1 class="event-title"><%= @event.title %></h1>
+<div class="card text-white bg-dark mb-3" style="width: 70rem;">
+  <img class="card-img-top" src="<%= @event.image_url %>" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">Date: <%= @event.formatted_date %></p>
+    <p class="card-text">Location: <%= @event.address %></p>
+  </div>
+ </div>
+
+</center>

@@ -4,14 +4,19 @@
     <title>CorvetteClub</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
   <body>
-    <%= render "layouts/navbar" %>
-    <%= render "layouts/logo" %>
+    <%= render "layouts/navbar" %><br>
+    <%= render "layouts/current_user" %><br>
+
+    <% flash.each do |type, msg| %>
+      <div class="alert">
+        <center>
+        <%= msg %>
+        </center>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

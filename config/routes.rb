@@ -4,4 +4,5 @@ devise_for :users, controllers: {
       }
   root 'home#index'
   resources :users, only: [:new, :create]
+  resources :events
  end

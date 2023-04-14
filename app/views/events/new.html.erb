@@ -1,0 +1,39 @@
+<center>
+<h1>New Event</h1>
+
+<%= form_with url: events_path, method: :post, local: true do |f| %>
+<div class="title_name" id="formline1">
+  <div class="row"> 
+    <div class="col">
+        <%= f.label :image %>
+        <p><%= f.file_field :image, class: "form-control" %></p>
+    </div>
+  </div>
+</div>
+<div class="title_name" id="formline1">
+  <div class="row"> 
+    <div class="col">
+        <%= f.label :title %>
+        <p><%= f.text_field :title, class: "form-control", placeholder: "Title" %></p>
+    </div>
+  </div>
+</div>
+<div class="title_name" id="formline2">
+  <div class="row">
+    <div class="col">
+        <%= f.label :address %>
+        <p><%= f.text_field :address, class: "form-control", placeholder: "Address" %></p>
+    </div>
+  </div> 
+</div>
+<div class="title_name" id="formline3">
+  <div class="row">
+    <div class="col">
+        <%= f.label :date %>
+        <p><%= f.datetime_select :start_datetime, :ampm => true, :minute_step => 15, class: "form-control" %></p>
+    </div>
+  </div>
+</div>
+<center><%= f.submit "Create!", class: "button" %></center>
+<% end %>
+</center>

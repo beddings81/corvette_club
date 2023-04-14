@@ -1,8 +1,12 @@
 @import "bootstrap";
 
+.navbar{
+  min-height: 100px;
+}
+
 .navbar a {
   color: white;
-  font-family: "arial rounded mt bold", sans-serif;
+  font-size: 30px;
 }
 
 .navbar a:hover {
@@ -10,12 +14,59 @@
   transition: 0.7s;
 }
 
-.bg {
-  background-color:red;
-  border-radius: 50px;
-}
-
 .title_name {
   color:red;
-  font-family: "arial rounded mt bold", sans-serif;
+}
+
+@font-face {
+  font-family: 'grandsport';
+  src: url('grandsport.ttf');
+}
+
+.welcome-header {
+  color: white;
+  font-family: "grandsport";
+  font-size: 55px;
+}
+
+.card-title {
+  color: red;
+
+}
+
+.alert {
+  color: red;
+  font-size: 20px;
+  font-family: "arial";
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+.field {
+  color: red;
+  font-size: 20px;
+  line-height: 2;
+  width: 100%;
+}
+
+.row {
+  width: 15%;
+}
+
+h2 {
+  color: black;
+}
+
+.current_user {
+  color: white;
+  text-align: right;
+  padding-right: 1%;
+  font-size: 25px;
+}
+
+.event-title {
+  color: white;
+  font-family: "grandsport";
 }
