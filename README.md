@@ -6,7 +6,7 @@
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)  ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ## Project Overview
-
+The Corvette Club app is a user-friendly platform designed to help members stay updated on upcoming events. Users can log in securely to access a personalized dashboard where they can view event schedules, RSVP, and get directions to event locations. The app's intuitive interface allows for easy navigation and quick access to important information. Members can also receive push notifications for new events, updates, and other important announcements. With the Corvette Club app, staying connected with the club and participating in events has never been easier.
 ## Prerequisites
 Running this project requires:
 - Rails 5.2.8
